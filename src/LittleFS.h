@@ -296,6 +296,7 @@ public:
 				} // else FILE_WRITE_BEGIN
 				return File(new LittleFSFile(&lfs, file, filepath));
 			}
+			free(file);
 		}
 		return File();
 	}
